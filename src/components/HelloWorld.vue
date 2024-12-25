@@ -255,7 +255,7 @@ export default {
 .swiper-slide #item {
   display: block;
   width: 100%;
-  height: 700px;
+  height: 660px;
   object-fit: cover;
   gap: 100rem;
   border-radius: 5px;
@@ -352,7 +352,6 @@ export default {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    gap: 100rem;
     border-radius: 5px;
   }
 }

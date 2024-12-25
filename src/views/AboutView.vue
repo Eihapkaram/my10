@@ -301,12 +301,6 @@ h2 {
     gap: 10px;
     left: 0px;
   }
-  /* header in ditilze contener */
-  #informheader {
-    align-self: flex-start;
-    left: 289px;
-    width: 40%;
-  }
   #terial {
     width: 100%;
   }

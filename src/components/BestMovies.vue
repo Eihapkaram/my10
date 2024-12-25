@@ -278,5 +278,24 @@ export default {
 }
 /*/mobile/*/
 @media (max-width: 500px) {
+  #head {
+    align-self: flex-end;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-block: 30px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    font-style: normal;
+    width: 100%;
+  }
+  #head h3 {
+    width: 250px;
+    position: relative;
+    left: 20px;
+  }
 }
 </style>

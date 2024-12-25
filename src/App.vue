@@ -89,8 +89,8 @@
     }
     #informheader {
       align-self: flex-start;
-      left: 210px;
-      width: 200px;
+      left: 180px;
+      width: 180px;
     }
     #links ul {
       display: flex;

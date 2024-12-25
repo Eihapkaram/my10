@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-fluid">
     <hr />
     <form
       id="searchfor"
@@ -18,7 +18,7 @@
     </form>
   </div>
   <hr />
-  <div class="contenier-fliud" id="coon">
+  <div id="coon">
     <swiper-slide id="swip" v-for="film in this.films" :key="film.id"
       ><img id="item" :src="sr + '/' + film.poster_path" />
       <div class="popupp" id="popup">
@@ -39,16 +39,18 @@
     </swiper-slide>
   </div>
   <hr />
-  <div
-    class="btn-toolbar justify-content-between"
-    role="toolbar"
-    aria-label="Toolbar with button groups"
-  >
-    <div class="btn-group" role="group" aria-label="First group">
-      <button type="button" class="btn btn-outline-secondary">1</button>
-      <button type="button" class="btn btn-outline-secondary">2</button>
-      <button type="button" class="btn btn-outline-secondary">3</button>
-      <button type="button" class="btn btn-outline-secondary">4</button>
+  <div class="container-fluid" id="nextbtn">
+    <div
+      class="btn-toolbar"
+      role="toolbar"
+      aria-label="Toolbar with button groups"
+    >
+      <div class="btn-group" role="group" aria-label="First group">
+        <button type="button" class="btn btn-outline-secondary">1</button>
+        <button type="button" class="btn btn-outline-secondary">2</button>
+        <button type="button" class="btn btn-outline-secondary">3</button>
+        <button type="button" class="btn btn-outline-secondary">4</button>
+      </div>
     </div>
   </div>
   <hr />
@@ -98,10 +100,10 @@ export default {
 .checked {
   color: orange;
 }
-.btn-toolbar {
-  position: relative;
-  left: 40rem;
-  width: 200px;
+#nextbtn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .swiper {
   width: 100%;
@@ -126,7 +128,7 @@ swiper-slide #item {
   border-radius: 5px;
   position: relative;
 }
-.contenier-fliud {
+#coon {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -259,12 +261,18 @@ swiper-slide #item {
 }
 /*/desktop/*/
 @media (max-width: 1366px) {
+  #nextbtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
 /*/tablet/*/
 @media (max-width: 991px) {
-  .btn-toolbar {
-    position: relative;
-    left: 330px;
+  #nextbtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
   #popup {
     display: none;
@@ -300,12 +308,13 @@ swiper-slide #item {
     align-self: center;
   }
 }
+
 /*/mobile/*/
 @media (max-width: 500px) {
-  .btn-toolbar {
-    position: relative;
-    left: 150px;
-    width: 100px;
+  #nextbtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
   #popup {
     display: none;
@@ -314,7 +323,7 @@ swiper-slide #item {
     justify-content: flex-start;
     align-items: flex-end;
     position: absolute;
-    height: 25%;
+    height: 26%;
     width: 130px;
   }
   .btn1in {
